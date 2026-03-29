@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - LS Luxory Auto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="LS Luxory Auto">
+            <h1>LS Luxory Auto</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html" class="active">Boutique</a></li>
+                <li><a href="destockage.html">Déstockage</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="boutique-header">
+            <h2>Notre sélection de véhicules</h2>
+            <div class="filtres">
+                <select id="categorie">
+                    <option value="all">Toutes catégories</option>
+                    <option value="sportive">Sportives</option>
+                    <option value="luxe">Luxe</option>
+                    <option value="utilitaire">Utilitaires</option>
+                    <option value="classique">Classiques</option>
+                </select>
+                <select id="tri">
+                    <option value="prix-asc">Prix croissant</option>
+                    <option value="prix-desc">Prix décroissant</option>
+                    <option value="nom-asc">Nom A-Z</option>
+                    <option value="nom-desc">Nom Z-A</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="voitures" id="voitures">
+            <!-- Voitures générées dynamiquement via JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LS Luxory Auto - Tous droits réservés</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
